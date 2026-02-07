@@ -205,3 +205,32 @@ src/
 - **Express.js** - Web framework
 - **SQLite3** - Database
 - **CORS** - Cross-origin support
+
+## Development Notes
+
+### Tech Stack Reasoning
+
+I chose **Node.js with Express** because it's perfect for building RESTful APIs quickly and has great async/await support for database operations. **SQLite** was selected since it requires zero configuration, is file-based (easy to deploy), and works perfectly for this assignment's scale without needing a separate database server.
+
+### Assumptions Made
+
+- All monetary values are stored as integers (in rupees) to avoid floating-point precision issues
+- Withdrawals are created with "pending" status by default - no approval workflow implemented
+- Sales dates are stored as TEXT in ISO format (SQLite doesn't have a native DATE type)
+- CORS is enabled for all origins since this is a backend-only API
+- When the service restarts, the database resets to initial seed data (suitable for demo/evaluation)
+- Author IDs, book IDs are manually assigned in seed data rather than auto-incremented
+
+### Time Spent
+
+**Estimated time for this project:** 4-5 hours
+
+Breakdown:
+
+- Initial setup and project structure: 30 minutes
+- Database schema and seed data: 45 minutes
+- Implementing all 5 API endpoints: 2 hours
+- Testing and validation logic: 1 hour
+- Documentation and deployment setup: 45 minutes
+
+**Actual time spent:** Approximately 4.5 hours including testing, debugging, and Render deployment configuration.
