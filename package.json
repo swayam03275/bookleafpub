@@ -1,0 +1,27 @@
+{
+  "name": "author-royalties-api",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Professional Author Royalties API with SQLite",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js"
+  },
+  "keywords": [
+    "api",
+    "royalties",
+    "authors",
+    "books"
+  ],
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "sqlite3": "^5.1.7"
+  }
+}
